@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="icon.jpg" alt="Your Logo">
+                </div>
+                <div class="business-name">
+                    <h4 style="color:#523E37">Potter's Paradise</h4>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="black-box">
+            <img src="pottery.jpg" alt="Pottery Image" class="background-image">
+            <div class="transparent-block">
+                
+                <h1 style="color:#f1e7cce2">Handcrafted Beauty in Every Piece</h1>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="introductory-paragraph">
+            <h3 style="color:#523E37">About us</h3>
+            <p>Welcome to Potter's Paradise, where we transform the ordinary into the extraordinary. Nestled at the intersection of art and craftsmanship, our passion for pottery shines through in every handcrafted piece. From shaping dreams in clay to creating timeless masterpieces, we invite you to explore our world of handcrafted beauty, where each creation tells a unique story. Discover the elegance of pottery that speaks to the soul and elevates your space with ceramic artistry. Welcome to a journey where clay, fire, and magic come together to inspire lives.</p>
+        </div>
+        <h3 class="section-heading" style="color:#523E37">Our Best Selling Items</h3> 
+    <div class="content">
+        <div class="card">
+            <img src="image3.jpg" alt="Handcrafted Ceramic Vase">
+            <div class="card-body">
+                <p class="card-text">Ceramic Harmony Vase</p>
+                <p class="card-price">Price: ₹950</p> 
+            </div>
+        </div>
+        <div class="card">
+            <img src="image4.jpg" alt="Artisan Clay Teapot">
+            <div class="card-body">
+                <p class="card-text">Artisan's Freehand Creation</p>
+                <p class="card-price">Price: ₹1199</p> 
+            </div>
+        </div>
+        <div class="card">
+            <img src="image5.jpg" alt="Rustic Pottery Plates Set">
+            <div class="card-body">
+                <p class="card-text">Neutral Tone Elegance Pottery Set</p>
+                <p class="card-price">Price: ₹2,700</p> 
+            </div>
+        </div>
+        <div class="card">
+            <img src="image6.jpg" alt="Elegant Stoneware Bowls">
+            <div class="card-body">
+                <p class="card-text">Duo-Tone Vertical Pot Pair</p>
+                <p class="card-price">Price: ₹1,499</p> 
+            </div>
+        </div>
+    </div>
+        <div class="discover-more-card">
+            <a href="#" class="card-link">
+                <div class="card-body">
+                    <p class="card-text">Discover More</p>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="customer-testimonials">
+        <div class="testimonial">
+            <p>"Potter's Paradise has brought artistry and elegance to my home. Their pottery pieces are exquisite and have become the center of attraction for my guests. I'm a proud owner of their Neutral Tone Elegance Pottery Set, and it's a timeless masterpiece!"</p>
+            <p class="customer-name">- Sneha Patil</p>
+        </div>
+        <div class="testimonial">
+            <p>"As a pottery enthusiast, I'm thrilled to have discovered Potter's Paradise. Their craftsmanship is unparalleled, and every piece carries a unique charm. I cherish my Ceramic Harmony Vase, a true symbol of creativity and quality."</p>
+            <p class="customer-name">- Harshvardhan Jadhav</p>
+        </div>
+    </div><br>
+
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Contact Us</h4>
+                    <p>Email: contact@pottersparadise.com</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+                </div>
+                <div class="col-md-6 social-media">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="https://www.facebook.com/PottersParadise" class="social-icon">PottersParadise<i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/pottersparadise" class="social-icon">pottersparadise<i class="fab fa-instagram"></i></a></li>
+                     
+                    </ul>
+                </div>
+            </div>
+        </div>
+        &copy; 2024 Potter's Paradise
+    </footer>
+
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var cardContainer = $('.content');
+            var cardWidth = $('.card').outerWidth(true);
+            var scrollAmount = 3 * cardWidth; 
+            
+            $('#scroll-right').click(function () {
+                cardContainer.animate({ scrollLeft: '+= ' + scrollAmount }, 500);
+            });
+        });
+    </script>
+</body>
+</html>
